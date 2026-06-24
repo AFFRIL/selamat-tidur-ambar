@@ -32,9 +32,17 @@ button{
 <div class="box">
 <h1>Selamat Tidur Ambar ❤️</h1>
 <p>Semoga mimpi indah yaa 🌙✨</p>
-<button onclick="alert('Aku sayang kamu ❤️')">
+<button onclick="putarLagu()">
 Klik Aku
 </button>
 </div>
+ <audio id="lagu" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+<script>
+function putarLagu() {
+  document.getElementById("lagu").play();
+  alert("Aku sayang kamu ❤️");
+}
+</script> 
 </body>
 </html>
