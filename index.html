@@ -42,6 +42,20 @@ img{
     margin-bottom:15px;
     box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
+    .fade img{
+    animation: munculFoto 2s ease;
+}
+
+@keyframes munculFoto{
+    from{
+        opacity:0;
+        transform:scale(0.7);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
 
 @keyframes fade{
     from{opacity:0;}
@@ -58,7 +72,7 @@ img{
     <button onclick="masuk()">Klik Aku</button>
 </div>
 
-<div id="halaman2">
+<div id="halaman2" class="fade">
     <img src="IMG-20260622-WA0023.jpg">
     <h1>Selamat Tidur Ambar ❤️</h1>
     <p>Semoga mimpi indah 🌙✨</p>
