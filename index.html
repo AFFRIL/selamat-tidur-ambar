@@ -32,6 +32,7 @@ button{
 <div class="box">
 <h1>Selamat Tidur Ambar ❤️</h1>
 <p>Semoga mimpi indah yaa 🌙✨</p>
+  <img id="foto" src="IMG-20260622-WA0023.jpg" width="250" style="display:none; border-radius:15px;">
 <button onclick="putarLagu()">
 Klik Aku
 </button>
@@ -40,9 +41,13 @@ Klik Aku
 
 <script>
 function putarLagu() {
-  document.getElementById("lagu").play();
+  
+  document.getElementById("foto").style.display = "block";
   alert("Aku sayang kamu ❤️");
 }
+  
+  
+
 </script> 
   <script>
 function buatHati() {
